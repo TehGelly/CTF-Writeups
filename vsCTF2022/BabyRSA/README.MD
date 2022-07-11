@@ -3,6 +3,7 @@
 ### Description
 Just a baby challenge...
 
+### Exploration
 ```py
 p = getPrime(128)
 q = getPrime(128)

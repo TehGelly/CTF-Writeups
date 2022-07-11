@@ -31,7 +31,7 @@ This prime generation looks something like "find the largest prime **ppp** such 
 
 Regardless, this tool instantly gives us a shortcut to starting a _lot_ closer to the goal, and we only need to work backwards, at most, 2\*0x1337 iterations to find the relevant factorial value and, thus, the prime associated with it.
 
-The plan is, then, to start with knowing **(p-1)! = p-1 mod p**, and then working our way _down_ until we hit a prime that divides into N. To work down a step, simply "divide" (multiply by the inverse) of the current factorial value, and subtract the factorial value. So, you can get (p-2)! = (p-1 * pow(p-1,-1,p))%p, and so on, checking each value between (p-0x1337)! and (p-2\*0x1337)! for the previous prime and its candidacy for divisibility.
+The plan is, then, to start with knowing **(p-1)! = p-1 mod p**, and then working our way _down_ until we hit a prime that divides into N. To work down a step, simply "divide" (multiply by the inverse) of the current factorial argument, and decrement the factorial argument. So, you can get **(p-2)! = (p-1 \* pow(p-1,-1,p))%p**, and so on, checking each value between **(p-0x1337)!** and **(p-2\*0x1337)!** for the previous prime and its candidacy for divisibility.
 
 ### Solution script
 

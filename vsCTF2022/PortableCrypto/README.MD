@@ -27,6 +27,7 @@ It looks suspiciously like arrows going in a circle, and if there's any esoteric
 
 ### Solution
 ![Colorized version of the Befunge script](files/noitpycerene.PNG)
+
 Befunge will start in the upper left, going to the right, running through the code. As noted in the Befunge documentation on the esolang wiki above, it's almost entirely stack-based, with any variables and registers having to be stored on either the stack or in the codespace itself. The introductory print code (colored in yellow) is the Befunge hallmark to how one prints out text.
 
 #### Printing Section

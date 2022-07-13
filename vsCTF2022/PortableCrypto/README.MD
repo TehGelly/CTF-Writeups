@@ -4,7 +4,7 @@
 I keep getting complaints about file size, so I made an encryption scheme using only a few characters!
 
 ### Exploration
-crypto.bf
+_crypto.bf_
 ```
        "NOITPYRCNE GALF ELBATROP SV">:v
 $                v                  |,<
@@ -12,7 +12,7 @@ v4p10+1:g10:_ #!\?+# <18421<p100,*25<
 >p~+98*+"¢"%"Δ"+#^,01g66*%#^_@
 (insert unholy unprintable characters here)
 ```
-out.txt
+_out.txt_
 ```
 VS PORTABLE FLAG ENCRYPTION
 ξέΠαΣεΝПЪвЭΡΫΥТμеЬаГΧιМИΟФΜήГΰбНЭЏЃκ

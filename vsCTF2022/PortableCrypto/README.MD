@@ -25,7 +25,12 @@ When I first downloaded the files, I was tipped off at first by the file extensi
 ```
 It looks suspiciously like arrows going in a circle, and if there's any esoteric programming language I know that has 2D arrows going in a circle, it's BeFunge! (https://esolangs.org/wiki/Befunge) Befunge is another language that was designed to be hell on whoever would work on backend things for it, except it was about building any compiler at all, instead of the smallest one in the case of Brainfuck. In a word, Befunge is 2D - designed to have a pointer on the code that moves around based on arrows that it encounters, conditional pipes, and, in the case of ?, _just picking a direction at random_. After finding a Befunge interpreter online (which actually doesn't work correctly - we'll get to that), I stepped through the Befunge to figure out exactly what it does
 ### Solution
+![Colorized version of the Befunge script](files/noitpycerene.PNG)
+Befunge will start in the upper left, going to the right, running through the code. As noted in the Befunge documentation on the esolang wiki above, it's almost entirely stack-based, with any variables and registers having to be stored on either the stack or in the codespace itself. The introductory print code (colored in yellow) is the Befunge hallmark to how one prints out text.
 
+![Highlighted version of the yellow part of the code](files/noitprint.PNG)
+
+The upper part pushes, as a string, "VS PORTABLE FLAG ENCRYPTION" onto the stack, but has to do it backwards - first in, last out. The arrow loop will duplicate the top of the stack (**:**), pop the stack and print that character (**,**), then pop the stack and check for 0 (**|**). If the stack has no contents, popping the stack results in a zero, so after all the characters are printed, the | check will go down instead of up. The arrow redirects the code to go right-to-left, pushes 5 and 2 onto the stack, multiplies them (10), and then prints that (to get a new line). The interpreter made this step super-clear to understand, and gave a good head start into understanding Befunge's operation.
 
 ### Solution script
 

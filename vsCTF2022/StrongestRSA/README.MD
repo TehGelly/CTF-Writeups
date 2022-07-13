@@ -60,12 +60,12 @@ while fac_pair[0] < 0x1337:
 
 print("initial part done - on to scanning")
 
-final_p = 1
+final_q = 1
 for i in tqdm(range(0x1337, 0x1337+0x1337)):
     if N % prevprime(fac_pair[1]) == 0:
-        final_p = prevprime(fac_pair[1])
+        final_q = prevprime(fac_pair[1])
         break
-    fac_pair = undo(fac_pair, p0)
+    fac_pair = undo(fac_pair, q0)
 
 if final_q != 1:
     print("found the prime!! q = {}".format(final_q))
